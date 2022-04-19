@@ -16,7 +16,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Define VMs with static private IP addresses.
   config.vm.define "lamp"  do |node|
     node.vm.hostname = "lamp.test"
-    node.vm.network :private_network, ip: "192.168.50.50"
+    node.vm.network :private_network, ip: "192.168.60.50"
     end
   # Provision Apache, MySQL & PHP via Ansible.
     config.vm.provision "ansible" do |ansible|
